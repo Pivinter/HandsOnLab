@@ -26,7 +26,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 module "security" {
-    source  = "app.terraform.io/Vladusalvink/security/azurerm"
+  source               = "app.terraform.io/Vladusalvink/security/azurerm"
   version              = "1.0.0"
   location             = azurerm_resource_group.rg.location
   resource_group_name  = azurerm_resource_group.rg.name
